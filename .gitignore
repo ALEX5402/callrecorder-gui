@@ -1,6 +1,9 @@
 /inspiration
 inspiration/*
 
+
+.kotlin/*
+/.kotlin/
 # Android Studio & IntelliJ IDEA files
 *.iml
 .gradle

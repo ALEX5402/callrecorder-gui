@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        create("releaseConfig") {
+            storeFile = file("bcrgui-key.jks")
+            storePassword = "awdkljui5454485611"
+            keyAlias = "bcrgui"
+            keyPassword = "awdkljui5454485611"
+        }
+    }
     namespace = "com.android.bcrgui"
     compileSdk = 37
 
@@ -11,21 +19,24 @@ android {
         applicationId = "com.android.bcrgui"
         minSdk = 23
         targetSdk = 37
-        versionCode = 102
-        versionName = "1.0.2"
+        versionCode = 103
+        versionName = "1.0.3"
         multiDexEnabled = false
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.get("debug")
+            signingConfig = signingConfigs.getByName("releaseConfig")
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        debug {
+            signingConfig = signingConfigs.getByName("releaseConfig")
         }
     }
     compileOptions {

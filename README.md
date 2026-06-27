@@ -25,15 +25,10 @@ A modern, fast, and feature-rich Material 3 companion player GUI for Basic Call 
 | :---: | :---: | :---: | :---: |
 | ![Player Bar](images/player2.png) | ![Full Player View](images/player-view.png) | ![Full Player View Dark](images/player-darkmode.png) | ![Settings Panel](images/settings.png) |
 
-### Private Recycle Bin
-| Checkbox Multi-Restore & Delete |
-| :---: |
-| ![Recycle Bin Dialog](images/recyclebin.png) |
-
-### Advanced Filters & Search
-| Filter Panel & Contacts Selector |
-| :---: |
-| ![Filter Configuration](images/filters.png) |
+### Recycle Bin & Advanced Filters
+| Private Recycle Bin | Advanced Filters & Search |
+| :---: | :---: |
+| ![Recycle Bin Dialog](images/recyclebin.png) | ![Filter Configuration](images/filters.png) |
 
 ---
 
